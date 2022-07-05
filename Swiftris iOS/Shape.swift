@@ -115,11 +115,34 @@ let NumShapeTypes: UInt32 = 7
               }
           }
 
+     final func rotateClockwise() {
+         let newOrientation = Orientation.rotate(orientation: orientation, clockwise: true)
+         rotateBlocks(orientation: newOrientation)
+              orientation = newOrientation
+          }
+
+          final func rotateCounterClockwise() {
+              let newOrientation = Orientation.rotate(orientation: orientation, clockwise: false)
+              rotateBlocks(orientation: newOrientation)
+              orientation = newOrientation
+          }
+     
           final func lowerShapeByOneRow() {
               shiftBy(columns: 0, rows:1)
           }
 
-     // #2
+     final func raiseShapeByOneRow() {
+         shiftBy(columns: 0, rows:-1)
+     }
+
+     final func shiftRightByOneColumn() {
+         shiftBy(columns: 1, rows:0)
+     }
+
+     final func shiftLeftByOneColumn() {
+         shiftBy(columns: -1, rows:0)
+     }
+     
           final func shiftBy(columns: Int, rows: Int) {
               self.column += columns
               self.row += rows

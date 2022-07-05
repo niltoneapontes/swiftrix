@@ -31,7 +31,7 @@ extension CGPoint{
 class GameScene: SKScene {
     let gameLayer = SKNode()
     let shapeLayer = SKNode()
-    let LayerPosition = CGPoint(x: 6, y: -6)
+    let LayerPosition = CGPoint(x: 20, y: -100)
     
     var tick:(() -> ())?
     var tickLengthMillis = TickLengthLevelOne
