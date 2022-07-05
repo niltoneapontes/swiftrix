@@ -82,6 +82,7 @@ class Swiftris {
     return false
 }
     func settleShape() {
+        score += 1
         guard let shape = fallingShape else {
             return
         }
@@ -114,10 +115,10 @@ class Swiftris {
     
     func removeCompletedLines() -> (linesRemoved: Array<Array<Block>>, fallenBlocks: Array<Array<Block>>) {
              var removedLines = Array<Array<Block>>()
-        for row in (1...NumRows).reversed() {
+        for row in (1..<NumRows).reversed() {
                  var rowOfBlocks = Array<Block>()
 
-            for column in 0...NumColumns {
+            for column in 0..<NumColumns {
                      guard let block = blockArray[column, row] else {
                          continue
                      }

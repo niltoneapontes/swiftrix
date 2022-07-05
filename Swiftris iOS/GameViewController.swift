@@ -18,6 +18,7 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var levelLabel: UILabel!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -54,10 +55,10 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
         
         let currentPoint = sender.translation(in: self.view)
         if let originalPoint = panPointReference {
-            if abs(currentPoint.y - originalPoint.y) > 100 {
-                swiftris.dropShape()
-            }
-            else if abs(currentPoint.x - originalPoint.x) > (BlockSize * 0.9) {
+//            if abs(currentPoint.y - originalPoint.y) > 100 {
+//                swiftris.dropShape()
+//            }
+            if abs(currentPoint.x - originalPoint.x) > (BlockSize * 0.9) {
 
                 if sender.velocity(in: self.view).x > CGFloat(0) {
                     swiftris.moveShapeRight()
@@ -96,6 +97,8 @@ class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognize
     
     func didTick() {
         swiftris.letShapeFall()
+        scoreLabel.text = String(swiftris.score)
+        levelLabel.text = String(swiftris.level)
     }
     
     func nextShape() {

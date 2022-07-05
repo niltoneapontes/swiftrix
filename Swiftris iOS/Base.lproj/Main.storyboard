@@ -75,6 +75,12 @@
                                     <constraint firstItem="avl-TB-UpY" firstAttribute="centerX" secondItem="WfZ-aF-fVr" secondAttribute="centerX" id="h5r-NH-Usc"/>
                                 </constraints>
                             </view>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="SWIFTRIS" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N8W-wf-nvY">
+                                <rect key="frame" x="95" y="89" width="225" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="40"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="W2a-0y-0xq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -117,7 +123,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="45" y="47"/>
+            <point key="canvasLocation" x="44.927536231884062" y="46.875"/>
         </scene>
     </scenes>
     <resources>
