@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		960D89D3287525C00010F714 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 960D89D2287525BF0010F714 /* Sounds */; };
 		9623EF642873CBA800F53D99 /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9623EF632873CBA800F53D99 /* Array2D.swift */; };
 		9623EF662873D0F200F53D99 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9623EF652873D0F200F53D99 /* Block.swift */; };
 		9623EF682873D75900F53D99 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9623EF672873D75900F53D99 /* Shape.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		960D89D2287525BF0010F714 /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
 		9623EF632873CBA800F53D99 /* Array2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
 		9623EF652873D0F200F53D99 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
 		9623EF672873D75900F53D99 /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				96A35B162873AF76001E6DE5 /* Actions.sks */,
 				96A35B182873AF76001E6DE5 /* GameScene.swift */,
 				96A35B192873AF79001E6DE5 /* Assets.xcassets */,
+				960D89D2287525BF0010F714 /* Sounds */,
 			);
 			path = "Swiftris Shared";
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				960D89D3287525C00010F714 /* Sounds in Resources */,
 				96A35B272873AF79001E6DE5 /* Main.storyboard in Resources */,
 				96A35B2B2873AF79001E6DE5 /* Actions.sks in Resources */,
 				96A35B2A2873AF79001E6DE5 /* LaunchScreen.storyboard in Resources */,
